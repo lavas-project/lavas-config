@@ -1,0 +1,125 @@
+{
+    "version": "1.0.4",
+    "templates": [
+        {
+            "value": "vue",
+            "name": "vue2",
+            "npm": "bpwa-template-vue",
+            "descr": "这是一个基于 vue 的 pwa 的模版",
+            "git": "https://github.com/searchfe/bpwa-template-vue.git",
+            "extData": {
+                "packageJsonAuthor": "${author}<${email}>"
+            },
+            "renderIgnores": []
+        }
+    ],
+
+    "properties": {
+        "dirPath": {
+            "type": "string",
+            "name": "项目目录",
+            "invaidate": "未检测到该 path, 请输入正确的 path。",
+            "validateType": "path"
+        },
+        "name": {
+            "type": "string",
+            "name": "项目名称",
+            "default": "pwa-project"
+        },
+        "author": {
+            "type": "string",
+            "name": "项目作者",
+            "description": "项目作者",
+            "default": "yourname"
+        },
+        "email": {
+            "type": "string",
+            "name": "email",
+            "default": "someone@somecompany.com",
+            "description": "项目作者的邮箱",
+            "validateType": "email",
+            "invaidate": "邮箱格式错误"
+        },
+        "descr": {
+            "type": "string",
+            "name": "项目描述",
+            "default": "这是一个 pwa 项目"
+        },
+        "framework": {
+            "type": "list",
+            "name": "前端框架",
+            "required": true,
+            "link": "templates",
+            "checkbox": false,
+            "depLevel": 0,
+            "list": [],
+            "appShellList": [
+                {
+                    "value": "BottomNavigation",
+                    "name": "BottomNavigation",
+                    "dir": "./src/appShells/BottomNavigation.vue",
+                    "extname": ".vue",
+                    "descr": "这是一个包含头部和尾部的 shell, 其中支持过场动画",
+                    "imgs": [
+                        {
+                            "alt": "初始",
+                            "src": "https://bos.nj.bpc.baidu.com/mms-res/pwa/entry.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        "appShell": {
+            "type": "list",
+            "name": "AppShell",
+            "dependence": "framework",
+            "ref": "appShellList",
+            "depLevel": 1,
+            "checkbox": false,
+            "required": true,
+            "list": []
+        },
+        "isSsr": {
+            "type": "boolean",
+            "name": "服务端渲染",
+            "required": true
+        }
+    },
+
+    "jsonSchema": {
+        "type": "object",
+        "description": "bpwa json schema",
+        "properties": {
+            "dirname": {
+                "type": "string",
+                "description": "存储导出工程的目录"
+            },
+            "name": {
+                "type": "string",
+                "description": "工程的项目名和文件夹名"
+            },
+            "author": {
+                "type": "string",
+                "description": "工程的作者，代码注释和 package.json 需要用到"
+            },
+            "descr": {
+                "type": "string",
+                "description": "工程的描述，用于 package.json 和 manifest.json 中的项目描述"
+            },
+            "framework": {
+                "type": "string",
+                "description": "初始化项目时选中的项目使用的框架"
+            },
+            "appShell": {
+                "type": "string",
+                "description": "初始化项目时选中的使用的 shell 模版"
+            },
+            "isSsr": {
+                "type": "boolean",
+                "description": "是否需要服务端渲染"
+            }
+        },
+        "required": ["dirPath", "framework", "appShell", "isSsr"],
+        "dependencies": {}
+    }
+}

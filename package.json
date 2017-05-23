@@ -1,0 +1,24 @@
+{
+  "name": "bpwa-config",
+  "version": "1.0.0",
+  "description": "global config in cloud for bpwa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "edp bos ./config.json bos://mms-res",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/searchfe/bpwa-config.git"
+  },
+  "keywords": [
+    "bpwa",
+    "pwa"
+  ],
+  "author": "zoumiaojiang <zoumiaojiang@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/searchfe/bpwa-config/issues"
+  },
+  "homepage": "https://github.com/searchfe/bpwa-config#readme"
+}
