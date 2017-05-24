@@ -1,5 +1,6 @@
 {
     "version": "1.0.4",
+    "time": "2017-05-23 11:21:01",
     "templates": [
         {
             "value": "vue",
@@ -10,7 +11,25 @@
             "extData": {
                 "packageJsonAuthor": "${author}<${email}>"
             },
-            "renderIgnores": []
+            "renderIgnores": [],
+            "subList": {
+                "appShell": [
+                    {
+                        "value": "BottomNavigation",
+                        "name": "BottomNavigation",
+                        "dir": "./src/appShells/BottomNavigation.vue",
+                        "extname": ".vue",
+                        "descr": "这是一个包含头部和尾部的 shell, 其中支持过场动画",
+                        "imgs": [
+                            {
+                                "alt": "初始",
+                                "src": "https://bos.nj.bpc.baidu.com/mms-res/pwa/entry.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "subString": {}
         }
     ],
 
@@ -18,8 +37,8 @@
         "dirPath": {
             "type": "string",
             "name": "项目目录",
-            "invaidate": "未检测到该 path, 请输入正确的 path。",
-            "validateType": "path"
+            "default": "./",
+            "invalidate": "该 path 不存在, 请输入正确的 path。"
         },
         "name": {
             "type": "string",
@@ -29,16 +48,14 @@
         "author": {
             "type": "string",
             "name": "项目作者",
-            "description": "项目作者",
             "default": "yourname"
         },
         "email": {
             "type": "string",
             "name": "email",
             "default": "someone@somecompany.com",
-            "description": "项目作者的邮箱",
-            "validateType": "email",
-            "invaidate": "邮箱格式错误"
+            "regExp": "^(\\w-*\\.*)+@(\\w-?)+(\\.\\w{2,})+$",
+            "invalidate": "邮箱格式错误"
         },
         "descr": {
             "type": "string",
@@ -52,28 +69,13 @@
             "link": "templates",
             "checkbox": false,
             "depLevel": 0,
-            "list": [],
-            "appShellList": [
-                {
-                    "value": "BottomNavigation",
-                    "name": "BottomNavigation",
-                    "dir": "./src/appShells/BottomNavigation.vue",
-                    "extname": ".vue",
-                    "descr": "这是一个包含头部和尾部的 shell, 其中支持过场动画",
-                    "imgs": [
-                        {
-                            "alt": "初始",
-                            "src": "https://bos.nj.bpc.baidu.com/mms-res/pwa/entry.png"
-                        }
-                    ]
-                }
-            ]
+            "list": []
         },
         "appShell": {
             "type": "list",
             "name": "AppShell",
             "dependence": "framework",
-            "ref": "appShellList",
+            "ref": "appShell",
             "depLevel": 1,
             "checkbox": false,
             "required": true,
