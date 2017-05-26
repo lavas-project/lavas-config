@@ -9,13 +9,13 @@
             "desc": "这是一个基于 vue 的 pwa 的模版",
             "git": "https://github.com/searchfe/bpwa-template-vue.git",
             "extData": {
-                "packageJsonAuthor": "!__ author __!<!__ email __!>"
+                "packageJsonAuthor": "*__ author __*<*__ email __*>"
             },
             "etpl": {
                 "commandOpen": "{%",
                 "commandClose": "%}",
-                "variableOpen": "!__",
-                "variableClose": "__!"
+                "variableOpen": "*__",
+                "variableClose": "__*"
             },
             "renderIgnores": [],
             "exportsIgnores": [".git", "docs"],
