@@ -6,12 +6,19 @@
             "value": "vue",
             "name": "vue2",
             "npm": "bpwa-template-vue",
-            "descr": "这是一个基于 vue 的 pwa 的模版",
+            "desc": "这是一个基于 vue 的 pwa 的模版",
             "git": "https://github.com/searchfe/bpwa-template-vue.git",
             "extData": {
-                "packageJsonAuthor": "${author}<${email}>"
+                "packageJsonAuthor": "!__ author __!<!__ email __!>"
+            },
+            "etpl": {
+                "commandOpen": "{%",
+                "commandClose": "%}",
+                "variableOpen": "!__",
+                "variableClose": "__!"
             },
             "renderIgnores": [],
+            "exportsIgnores": [".git", "docs"],
             "subList": {
                 "appShell": [
                     {
@@ -43,7 +50,9 @@
         "name": {
             "type": "string",
             "name": "项目名称",
-            "default": "pwa-project"
+            "default": "pwa-project",
+            "regExp": "^([a-z_][0-9a-z_\\-]{1,213})?$",
+            "invalidate": "输入小写字母数字 - _ 等 url 安全字符"
         },
         "author": {
             "type": "string",
@@ -57,7 +66,7 @@
             "regExp": "^(\\w-*\\.*)+@(\\w-?)+(\\.\\w{2,})+$",
             "invalidate": "邮箱格式错误"
         },
-        "descr": {
+        "desc": {
             "type": "string",
             "name": "项目描述",
             "default": "这是一个 pwa 项目"
@@ -67,6 +76,7 @@
             "name": "前端框架",
             "required": true,
             "link": "templates",
+            "default": "vue",
             "checkbox": false,
             "depLevel": 0,
             "list": []
@@ -75,6 +85,7 @@
             "type": "list",
             "name": "AppShell",
             "dependence": "framework",
+            "default": "BottomNavigation",
             "ref": "appShell",
             "depLevel": 1,
             "checkbox": false,
@@ -84,6 +95,7 @@
         "isSsr": {
             "type": "boolean",
             "name": "服务端渲染",
+            "default": false,
             "required": true
         }
     },
@@ -104,7 +116,7 @@
                 "type": "string",
                 "description": "工程的作者，代码注释和 package.json 需要用到"
             },
-            "descr": {
+            "desc": {
                 "type": "string",
                 "description": "工程的描述，用于 package.json 和 manifest.json 中的项目描述"
             },
