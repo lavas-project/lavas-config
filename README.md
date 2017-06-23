@@ -1,2 +1,2 @@
-# bpwa-config
-global config in cloud for bpwa
+# lavas-config
+Lavas scaffold's cloud config file
