@@ -1,7 +1,7 @@
 {
-  "name": "bpwa-config",
+  "name": "lavas-config",
   "version": "1.0.0",
-  "description": "global config in cloud for bpwa",
+  "description": "global config in cloud for lavas",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/searchfe/bpwa-config.git"
+    "url": "git+https://github.com/lavas-project/lavas-config.git"
   },
   "keywords": [
-    "bpwa",
+    "lavas",
     "pwa"
   ],
   "author": "zoumiaojiang <zoumiaojiang@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/searchfe/bpwa-config/issues"
+    "url": "https://github.com/lavas-project/lavas-config/issues"
   },
-  "homepage": "https://github.com/searchfe/bpwa-config#readme"
+  "homepage": "https://github.com/lavas-project/lavas-config#readme"
 }

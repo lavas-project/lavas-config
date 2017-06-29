@@ -15,8 +15,8 @@
                     {
                         "value": "basic",
                         "name": "basic",
-                        "git": "https://github.com/searchfe/lavas-template-vue-basic.git",
-                        "desc": "这是一个基于 vue 的 pwa 简易模版，其中包含 manifest 和 service worker",
+                        "git": "https://github.com/lavas-project/lavas-template-vue-basic.git",
+                        "desc": "PWA 简易模版，包含 manifest 和 service worker，skeleton",
                         "extData": {
                             "packageJsonAuthor": "*__ author __*<*__ email __*>"
                         },
@@ -30,10 +30,10 @@
                         "exportsIgnores": [".git", "docs"]
                     },
                     {
-                        "value": "web-shells",
-                        "name": "web-shells",
-                        "git": "https://github.com/searchfe/lavas-template-vue-webshell.git",
-                        "desc": "这是一个基于 vue 的 pwa webshell模版，其中包含 manifest 和 service worker 以及部分封装逻辑",
+                        "value": "app-shells",
+                        "name": "app-shells",
+                        "git": "https://github.com/lavas-project/lavas-template-vue-appshell.git",
+                        "desc": "PWA AppShell模版，其中包含 manifest 和 service worker，skeleton 以及通用 shell 的封装",
                         "extData": {
                             "packageJsonAuthor": "*__ author __*<*__ email __*>"
                         },
@@ -122,6 +122,7 @@
             "default": "./",
             "invalidate": "该 path 不存在, 请输入正确的 path。",
             "description": "存储导出工程的目录" ,
+            "disable": true,
             "jsonType": "string"
         },
         "name": {
