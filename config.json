@@ -13,10 +13,10 @@
             "subList": {
                 "template": [
                     {
-                        "value": "basic",
-                        "name": "basic",
+                        "value": "Basic",
+                        "name": "Basic",
                         "git": "https://github.com/lavas-project/lavas-template-vue-basic.git",
-                        "desc": "PWA 简易模版，包含 manifest 和 service worker，skeleton",
+                        "desc": "PWA 简易单页应用模版，包含 PWA 工程化相关必需内容。",
                         "extData": {
                             "packageJsonAuthor": "*__ author __*<*__ email __*>"
                         },
@@ -30,10 +30,10 @@
                         "exportsIgnores": [".git", "docs"]
                     },
                     {
-                        "value": "app-shells",
-                        "name": "app-shells",
+                        "value": "App-shells",
+                        "name": "App-shells",
                         "git": "https://github.com/lavas-project/lavas-template-vue-appshell.git",
-                        "desc": "PWA AppShell模版，其中包含 manifest 和 service worker，skeleton 以及通用 shell 的封装",
+                        "desc": "PWA AppShell 模版，其中包含 PWA 工程化必需内容以及通用 shell 的封装。",
                         "extData": {
                             "packageJsonAuthor": "*__ author __*<*__ email __*>"
                         },
@@ -68,7 +68,24 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    {
+                        "value": "MPA",
+                        "name": "MPA (多页应用)",
+                        "git": "https://github.com/lavas-project/lavas-template-vue-mpa.git",
+                        "desc": "PWA 多页应用模版，其中包含多页应用工程化解决方案以及 PWA 工程化必需内容。",
+                        "extData": {
+                            "packageJsonAuthor": "*__ author __*<*__ email __*>"
+                        },
+                        "etpl": {
+                            "commandOpen": "{%",
+                            "commandClose": "%}",
+                            "variableOpen": "*__",
+                            "variableClose": "__*"
+                        },
+                        "renderIgnores": [],
+                        "exportsIgnores": [".git", "docs"]
+                    },
                 ]
             },
             "subString": {}
