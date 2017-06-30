@@ -85,7 +85,7 @@
                         },
                         "renderIgnores": [],
                         "exportsIgnores": [".git", "docs"]
-                    },
+                    }
                 ]
             },
             "subString": {}
