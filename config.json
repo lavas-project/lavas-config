@@ -3,7 +3,7 @@
     "time": "2017-06-06 11:21:01",
     "defaults": {
         "framework": "vue",
-        "template": "basic",
+        "template": "Basic",
         "appShell": "BottomNavigation"
     },
     "frameworks": [
