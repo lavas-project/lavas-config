@@ -30,7 +30,7 @@
                         "exportsIgnores": [".git", "docs"]
                     },
                     {
-                        "value": "AppShell",
+                        "value": "App Shell",
                         "name": "App Shell",
                         "git": "https://github.com/lavas-project/lavas-template-vue-appshell.git",
                         "desc": "AppShell 模版，其中包含 PWA 工程化必需内容以及通用 shell 的封装。",
@@ -70,10 +70,27 @@
                         }
                     },
                     {
-                        "value": "MPA",
+                        "value": "Multiple Page App",
                         "name": "Multiple Page App (多页应用)",
                         "git": "https://github.com/lavas-project/lavas-template-vue-mpa.git",
                         "desc": "多页应用模版，其中包含多页应用工程化解决方案以及 PWA 工程化必需内容。",
+                        "extData": {
+                            "packageJsonAuthor": "*__ author __*<*__ email __*>"
+                        },
+                        "etpl": {
+                            "commandOpen": "{%",
+                            "commandClose": "%}",
+                            "variableOpen": "*__",
+                            "variableClose": "__*"
+                        },
+                        "renderIgnores": [],
+                        "exportsIgnores": [".git", "docs"]
+                    },
+                    {
+                        "value": "Server Side Rendering",
+                        "name": "Server Side Rendering (服务端渲染)",
+                        "git": "https://github.com/lavas-project/lavas-template-vue-ssr.git",
+                        "desc": "SSR PWA 模版，其中包含 SSR 工程化解决方案以及 PWA 工程化必需内容。",
                         "extData": {
                             "packageJsonAuthor": "*__ author __*<*__ email __*>"
                         },
