@@ -4,8 +4,7 @@
   "description": "global config in cloud for lavas-scaffold",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "edp bos ./config.json bos://mms-res",
+    "build": "edp bos ./config.json bos://mms-res"
   },
   "repository": {
     "type": "git",
