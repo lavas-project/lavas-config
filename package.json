@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lavas-project/lavas-config/issues"
   },
-  "homepage": "https://github.com/lavas-project/lavas-config#readme"
+  "homepage": "https://github.com/lavas-project/lavas-config#readme",
+  "devDependencies": {
+    "edp": "^1.1.2"
+  }
 }

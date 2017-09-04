@@ -1,0 +1,50 @@
+{
+    "defaults": {
+        "framework": "vue",
+        "template": "lavasTemplate"
+    },
+    "frameworks": [
+        {
+            "value": "vue",
+            "name": "vue2",
+            "subList": {
+                "template": [
+                    {
+                        "value": "lavasTemplate",
+                        "name": "lavasTemplate",
+                        "git": "https://github.com/lavas-project/lavas-template.git",
+                        "desc": "lavas 初始模版，包含 PWA 工程化相关必需内容。"
+                    }
+                ]
+            }
+        }
+    ],
+    "schema": {
+        "framework": {
+            "type": "list",
+            "name": "前端框架",
+            "required": true,
+            "link": "frameworks",
+            "default": "vue",
+            "checkbox": false,
+            "disable": true,
+            "depLevel": 0,
+            "list": [],
+            "jsonType": "string",
+            "description": "项目所选择的基础框架"
+        },
+        "template": {
+            "type": "list",
+            "name": "模版类型",
+            "dependence": "framework",
+            "default": "Basic",
+            "ref": "template",
+            "depLevel": 1,
+            "checkbox": false,
+            "required": true,
+            "list": [],
+            "jsonType": "string",
+            "description": "初始化项目时选中的模版类型"
+        }
+    }
+}

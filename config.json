@@ -1,6 +1,5 @@
 {
     "version": "1.0.5",
-    "time": "2017-06-06 11:21:01",
     "defaults": {
         "framework": "vue",
         "template": "Basic",
@@ -27,7 +26,7 @@
                             "variableClose": "__*"
                         },
                         "renderIgnores": [],
-                        "exportsIgnores": [".git", "docs"]
+                        "exportsIgnores": [".git", "docs", "meta.json"]
                     },
                     {
                         "value": "App Shell",
@@ -44,7 +43,7 @@
                             "variableClose": "__*"
                         },
                         "renderIgnores": [],
-                        "exportsIgnores": [".git", "docs"],
+                        "exportsIgnores": [".git", "docs", "meta.json"],
                         "subList": {
                             "appShell": [
                                 {
@@ -84,7 +83,7 @@
                             "variableClose": "__*"
                         },
                         "renderIgnores": [],
-                        "exportsIgnores": [".git", "docs"]
+                        "exportsIgnores": [".git", "docs", "meta.json"]
                     },
                     {
                         "value": "Server Side Rendering",
@@ -101,7 +100,7 @@
                             "variableClose": "__*"
                         },
                         "renderIgnores": [],
-                        "exportsIgnores": [".git", "docs"]
+                        "exportsIgnores": [".git", "docs", "meta.json"]
                     }
                 ]
             },
