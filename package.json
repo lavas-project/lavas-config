@@ -4,7 +4,7 @@
   "description": "global config in cloud for lavas-scaffold",
   "main": "index.js",
   "scripts": {
-    "build": "edp bos ./config.json bos://mms-res"
+    "build": "edp bos ./ bos://mms-res/lavas-scaffold"
   },
   "repository": {
     "type": "git",
